@@ -15,6 +15,7 @@ function App() {
     <div className="app">
       <h1>Hi there!</h1>
       <DemoOutput show={showParagraph} />
+      {/*Button を memo にしても、 toggleParagraphHandler が再描画されるので、 memoは利用されずにButtonは再描画される*/}
       <Button onClick={toggleParagraphHandler}>Show Paragraph!</Button>
     </div>
   );
