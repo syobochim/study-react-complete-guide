@@ -3,11 +3,15 @@ import counter from "../components/Counter";
 
 const counterReducer = (state = { counter: 0 }, action) => {
   if (action.type === "increment") {
-    state.counter + 1;
+    return {
+      counter: state.counter + 1,
+    };
   }
 
   if (action.type === "decrement") {
-    state.counter - 1;
+    return {
+      counter: state.counter - 1,
+    };
   }
   return state;
 };
