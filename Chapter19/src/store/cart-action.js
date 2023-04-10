@@ -10,13 +10,17 @@ export const fetchCartData = () => {
       if (!response.ok) {
         throw new Error("Cloud not fetch cart data");
       }
-      const data = await response.json();
-      return data;
+      return await response.json();
     };
 
     try {
       const cartData = await fetchData();
-      dispatch(cartActions.replaceCart(cartData));
+      dispatch(
+        cartActions.replaceCart({
+          items: cartData.items || [],
+          totalQuantity: cartData.totalQuantity,
+        })
+      );
     } catch (error) {
       dispatch(
         uiActions.showNotification({
