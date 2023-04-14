@@ -14,3 +14,9 @@
 .list a {
     text-decoration: none;
 }
+
+.list a:hover,
+.list a.active {
+    color: orange;
+    text-decoration: underline;
+}
