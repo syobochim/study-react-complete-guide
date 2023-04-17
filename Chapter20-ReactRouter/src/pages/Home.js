@@ -10,7 +10,7 @@ const HomePage = () => {
     <>
       <h1>My HomePage</h1>
       <p>
-        Go to <Link to="/products">The list of products</Link>.
+        Go to <Link to="products">The list of products</Link>.
       </p>
 
       <p>

@@ -19,13 +19,13 @@ import ProductDetail from "./pages/ProductDetail";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/root",
     element: <Rootlayout />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "/", element: <HomePage /> },
-      { path: "/products", element: <ProductPage /> },
-      { path: "/products/:productId", element: <ProductDetail /> },
+      { path: "", element: <HomePage /> },
+      { path: "products", element: <ProductPage /> },
+      { path: "products/:productId", element: <ProductDetail /> },
     ],
   },
 ]);
