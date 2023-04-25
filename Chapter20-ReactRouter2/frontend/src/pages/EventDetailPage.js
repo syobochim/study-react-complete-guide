@@ -8,7 +8,7 @@ const EventDetailPage = () => {
 
 export default EventDetailPage;
 
-export const eventDetailLoader = async ({ request, params }) => {
+export const eventDetailLoader = async ({ params }) => {
   const id = params.eventId;
   const response = await fetch("http://localhost:8080/events/" + id);
 
