@@ -33,6 +33,7 @@ import EventRootLayout from "./pages/EventRoot";
 import EventsPage, { eventsLoader } from "./pages/Events";
 import ErrorPage from "./pages/Error";
 import { manipulateAction } from "./components/EventForm";
+import NewsletterPage, { action as newsletterAction } from "./pages/Newsletter";
 
 const router = createBrowserRouter([
   {
@@ -40,7 +41,7 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "/", element: <HomePage /> },
+      { index: true, element: <HomePage /> },
       {
         path: "/events",
         element: <EventRootLayout />,
@@ -66,6 +67,11 @@ const router = createBrowserRouter([
           },
           { path: "new", element: <NewEventPage />, action: manipulateAction },
         ],
+      },
+      {
+        path: "newsletter",
+        element: <NewsletterPage />,
+        action: newsletterAction,
       },
     ],
   },
