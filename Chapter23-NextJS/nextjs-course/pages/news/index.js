@@ -1,7 +1,7 @@
 // our-domain.com/news
 
-const NewsHage = () => {
+const NewsPage = () => {
   return <h1>The News Page</h1>;
 };
 
-export default NewsHage;
+export default NewsPage;
