@@ -36,7 +36,7 @@ const HomePage = (props) => {
 //   };
 // };
 
-export const getStaticProps = async (loadedMeetups) => {
+export const getStaticProps = async () => {
   // fetch data from an API
   return {
     props: {
