@@ -19,7 +19,7 @@ export const getStaticPaths = async () => {
   );
   const db = client.db();
   const meetupsCollection = db.collection("meetups");
-  const meetups = await meetupsCollection.find({}, { _id: 1 }).toArray();
+  const meetups = await meetupsCollection.find({}, { _id: 1 }).toArray(); // find の第二引数は、値を表示する(1)かしないか(0)を設定
   client.close();
   return {
     fallback: false,
