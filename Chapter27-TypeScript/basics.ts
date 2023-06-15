@@ -12,4 +12,23 @@ userName = "syobochim";
 let isInstructor: boolean = true;
 isInstructor = false;
 
-let hobbies: null; // It can't be set to a non-null value.
+let nullValue: null; // It can't be set to a non-null value.
+
+// More complex types
+// Array
+let hobbies: string[];
+hobbies = ["Sports", "Cooking"];
+
+let person: {
+  name: string;
+  age: number;
+};
+person = {
+  name: "Max",
+  age: 32,
+};
+
+let people: {
+  name: string;
+  age: number;
+}[];
