@@ -32,3 +32,7 @@ let people: {
   name: string;
   age: number;
 }[];
+
+// Type inference (型推論)
+let course = "React - The Complete Guide";
+// course = 12345 -> This code has caused an error.
