@@ -36,3 +36,7 @@ let people: {
 // Type inference (型推論)
 let course = "React - The Complete Guide";
 // course = 12345 -> This code has caused an error.
+
+// Union Type
+let lesson: string | number = "React - The Complete Guide";
+lesson = 12345;
