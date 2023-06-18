@@ -19,19 +19,25 @@ let nullValue: null; // It can't be set to a non-null value.
 let hobbies: string[];
 hobbies = ["Sports", "Cooking"];
 
-let person: {
+// let person: {
+//   name: string;
+//   age: number;
+// };
+
+// person = {
+//   name: "Max",
+//   age: 32,
+// };
+
+// Arias
+type Person = {
   name: string;
   age: number;
-};
-person = {
-  name: "Max",
-  age: 32,
 };
 
-let people: {
-  name: string;
-  age: number;
-}[];
+let person: Person;
+
+let people: Person[];
 
 // Type inference (型推論)
 let course = "React - The Complete Guide";
