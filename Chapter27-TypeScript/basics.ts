@@ -46,3 +46,14 @@ let course = "React - The Complete Guide";
 // Union Type
 let lesson: string | number = "React - The Complete Guide";
 lesson = 12345;
+
+// Functions & Types
+
+function add(a: number, b: number): number {
+  return a + b;
+}
+
+function print(value: any): void {
+  // function never return value.
+  console.log(value);
+}
