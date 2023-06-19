@@ -57,3 +57,15 @@ function print(value: any): void {
   // function never return value.
   console.log(value);
 }
+
+// Generics
+function insertAtBeginning<T>(array: T[], value: T) {
+  // This function requires parameter of the same type, because both the array and the value type are of type T.
+  const newArray = [value, ...array];
+  return newArray;
+}
+
+const demoArray = [1, 2, 3];
+const updatedArray = insertAtBeginning(demoArray, -1); // [-1, 1, 2, 3]
+
+const stringArray = insertAtBeginning(["a", "b", "c"], "d");
